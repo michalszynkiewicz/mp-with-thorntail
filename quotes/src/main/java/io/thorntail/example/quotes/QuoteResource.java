@@ -4,6 +4,7 @@ import io.thorntail.example.quotes.ads.Ad;
 import io.thorntail.example.quotes.ads.AdRetriever;
 import io.thorntail.example.quotes.quotes.Quote;
 import io.thorntail.example.quotes.quotes.QuotesProvider;
+import org.eclipse.microprofile.openapi.annotations.Operation;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -35,6 +36,11 @@ public class QuoteResource {
     private Processor processor;
 
     @GET
+    @Operation(
+            description = "Get some random quotes. May contain advertisements",
+            operationId = "getQuotesOperation",
+            summary = "obtain quotes"
+    )
     public List<Quote> getQuotes() {
         List<Quote> resultList = new ArrayList<>();
 

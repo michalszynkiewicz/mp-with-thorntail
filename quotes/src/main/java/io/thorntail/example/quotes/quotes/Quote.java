@@ -1,5 +1,7 @@
 package io.thorntail.example.quotes.quotes;
 
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
 /**
  * @author Michal Szynkiewicz, michal.l.szynkiewicz@gmail.com
  * <br>
@@ -8,6 +10,7 @@ package io.thorntail.example.quotes.quotes;
 public class Quote {
     private String content;
     private String author;
+    @Schema(description = "url to redirect to on a click on the quote")
     private String url;
 
     public String getContent() {
