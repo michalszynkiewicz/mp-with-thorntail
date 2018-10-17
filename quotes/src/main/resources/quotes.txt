@@ -1,0 +1,9 @@
+E.W. Dijkstra: I still hesitate to accept my laziness or ignorance as full explanation of this disturbing fact.
+Fred Brooks: Adding manpower to a late software project makes it later.
+Fred Brooks: 9 women CANNOT make a baby in ONE MONTH.
+Martin Fowler: Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+Douglas Hofstadter: Hofstadter's Law - It always takes longer than you expect, even when you take into account Hofstadter's Law.
+Donald Knuth: We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
+Montoya: You keep using that word, I do not think it means what you think it means
+Travis Bickle: You talking to me?
+Captain Louis Renault: Round up the usual suspects.

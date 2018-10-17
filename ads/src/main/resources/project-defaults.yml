@@ -1,0 +1,9 @@
+swarm:
+  port:
+    offset: 100
+  jaeger:
+    remote-reporter-http-endpoint: http://localhost:14268/api/traces
+    service-name: ads
+    sampler-type: const
+    sampler-parameter: 1
+    enable-b3-header-propagation: true
