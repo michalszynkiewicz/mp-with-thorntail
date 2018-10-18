@@ -1,0 +1,7 @@
+swarm:
+  jaeger:
+    remote-reporter-http-endpoint: http://localhost:14268/api/traces
+    service-name: quotes
+    sampler-type: const
+    sampler-parameter: 1
+    enable-b3-header-propagation: true

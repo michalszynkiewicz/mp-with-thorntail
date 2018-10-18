@@ -1,5 +1,7 @@
 package io.thorntail.example.quotes.ads;
 
+import io.opentracing.Tracer;
+import io.smallrye.opentracing.SmallRyeClientTracingFeature;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.eclipse.microprofile.rest.client.RestClientBuilder;
 
@@ -16,6 +18,8 @@ import java.net.URL;
 @ApplicationScoped
 public class AdRetriever {
 
+    @Inject
+    private Tracer tracer;
 
     @Inject
     @ConfigProperty(name = "adServiceUrl")
@@ -25,7 +29,9 @@ public class AdRetriever {
 
     @PostConstruct
     public void setUp() {
+        SmallRyeClientTracingFeature tracingFeature = new SmallRyeClientTracingFeature(tracer);
         client = RestClientBuilder.newBuilder()
+                .register(tracingFeature)
                 .baseUrl(adServiceUrl)
                 .build(AdClient.class);
     }
