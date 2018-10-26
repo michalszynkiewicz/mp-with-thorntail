@@ -12,7 +12,7 @@ The demo consists of two services, ads that serves advertisements and quotes tha
 The ads service is already ready for all the steps of the demo. 
 The specific steps that correspond to the [commits](https://github.com/michalszynkiewicz/mp-with-thorntail/commits/master), are made on the quotes app
 
-To run an application run the following in an application directory:
+To run an application run the following in the application directory:
 ```
 mvn clean package && java -jar target/*-thorntail.jar
 ```
