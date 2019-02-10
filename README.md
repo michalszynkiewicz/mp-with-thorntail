@@ -23,3 +23,5 @@ docker run -d --name jaeger   -e COLLECTOR_ZIPKIN_HTTP_PORT=9411   -p 5775:5775/
 ```
 
 [Click here to download slides for the accompanying presentation](https://github.com/michalszynkiewicz/mp-with-thorntail/raw/master/EclipseCon%20Thorntail%20-%20A%20Micro%20Implementation%20of%20Eclipse%20MicroProfile.pdf)
+
+Recording of the presentation: https://www.youtube.com/watch?v=sYEtNbUORmQ
